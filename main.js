@@ -15,7 +15,7 @@ if (window.location.hostname === 'upbit.com' && !window.fInterval) {
 	document.body.prepend(div);
 
 	window.fInterval = setInterval(() => {
-		const target = document.evaluate('//a[text()="연장"]', document).iterateNext();
+		const target = document.evaluate('//a[text()="연장" or text()="Extend"]', document).iterateNext();
 		if (target) {
 			target.click();
 			window.fCount++;
