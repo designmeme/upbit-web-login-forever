@@ -21,5 +21,5 @@ if (window.location.hostname === 'upbit.com' && !window.fInterval) {
 			window.fCount++;
 			document.getElementById('extend-count').innerText = window.fCount;
 		}
-	}, 1000 * 60 * 30);
+	}, 1000 * 60 * 10);
 }
